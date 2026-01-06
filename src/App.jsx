@@ -30,7 +30,7 @@ function App() {
       id: 4,
       title: "Kolesa",
       description:
-        "Штатные колёса Mercedes-Benz E-Class W214: диски 17″, 18″, 19″, 20″ (реже 21″) с шинами 225/60 R17, 225/55 R18, 245/45 R19 и 275/40 R19, а также 245/40 R20 и 275/35 R20.",
+        "Штатные колёса Mercedes-Benz E-Class W214: диски 17″, 18″, 19″, 20″...",
       image:
         "https://avatars.mds.yandex.net/get-autoru-vos/1936112/54c3c930ddff92f3786e53793a221293/456x342",
     },
@@ -39,7 +39,11 @@ function App() {
   return (
     <div className="car">
       <h1>Mercedes-Benz E-Class W214</h1>
-      <Car card={card} />
+      <div className="cards">
+        {card.map((item) => (
+          <Car key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   );
 }
