@@ -1,12 +1,15 @@
+import React from "react";
 
-const Car = () => {
-    return (
-        <div className="card" key={car.id}>
-            <img src={car.image} alt={car.title} />
-            <h2>{car.title}</h2>
-            <p>{car.description}</p>
+export default function Car({ card }) {
+  return (
+    <div className="cards">
+      {card.map((item) => (
+        <div key={item.id} className="card">
+          <h2 className="benz">{item.title}</h2>
+          <img src={item.image} alt={item.title} />
+          <p>{item.description}</p>
         </div>
-    );
+      ))}
+    </div>
+  );
 }
-
-export default Car;

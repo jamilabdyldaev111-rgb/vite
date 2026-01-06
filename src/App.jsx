@@ -1,7 +1,6 @@
+import React from "react";
 import Car from "./components/Car.jsx";
-import "./main.js";
 import "./index.css";
-import "./App.css";
 
 function App() {
   const card = [
@@ -38,7 +37,10 @@ function App() {
   ];
 
   return (
-    <Car />
+    <div className="car">
+      <h1>Mercedes-Benz E-Class W214</h1>
+      <Car card={card} />
+    </div>
   );
 }
 
