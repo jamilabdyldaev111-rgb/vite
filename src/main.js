@@ -1,3 +1,5 @@
+import App from "./App.jsx";  
+
 const card = [
   {
     id: 1,
@@ -22,5 +24,13 @@ const card = [
       "Стандартный объём багажника седана — примерно 540 литров у большинства бензиновых и дизельных версий",
     Image:
       "https://homato.ru/upload/resizer2/22/4fa/4fabc9035a01257f48dd4f661b7f8069.jpg",
+  },
+  {
+    id: 4,
+    title: "Kolesa",
+    description:
+      "Штатные колёса Mercedes-Benz E-Class W214: диски 17″, 18″, 19″, 20″ (реже 21″) с шинами 225/60 R17, 225/55 R18, 245/45 R19 и 275/40 R19, а также 245/40 R20 и 275/35 R20.",
+    image:
+      "https://avatars.mds.yandex.net/get-autoru-vos/1936112/54c3c930ddff92f3786e53793a221293/456x342",
   },
 ];

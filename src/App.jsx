@@ -1,3 +1,4 @@
+import Car from "./components/Car.jsx";
 import "./main.js";
 import "./index.css";
 import "./App.css";
@@ -37,19 +38,7 @@ function App() {
   ];
 
   return (
-    <div className="car">
-      <h1>Mercedes-Benz E-Class</h1>
-
-      <div className="cards">
-        {card.map((item) => (
-          <div className="card" key={item.id}>
-            <img src={item.image} alt={item.title} />
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    <Car />
   );
 }
 
